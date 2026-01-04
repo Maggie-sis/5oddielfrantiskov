@@ -11,3 +11,9 @@ nav ul {list-style-type: none;
         display: flex;
         justify-content: space-around;
 }
+nav ul li {display: inline;
+}
+nav ul li a {text-decoration: none;
+             padding: 0.5 rem 1 rem;
+             display: block;
+}
