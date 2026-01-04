@@ -1,1 +1,13 @@
 body {background-color: rgba(204, 255, 153)}
+footer {margin: 0;
+        padding: 0;
+}
+nav {background: blue;
+     padding: 1 rem; 
+}
+nav ul {list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+}
