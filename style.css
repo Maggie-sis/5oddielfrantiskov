@@ -1,23 +1,36 @@
-body {background-color: rgba(204, 255, 153)}
-footer {margin: 0;
+* {
+        margin: 0;
         padding: 0;
+        box-sizing: border-box;
 }
-nav {background: blue;
-     padding: 1 rem; 
+body {
+        background-image: url('https://static.vecteezy.com/system/resources/previews/041/466/920/non_2x/illustration-of-a-chinese-blue-dragon-tattoo-of-blue-asian-dragon-vector.jpg')
+        background-color: rgba(204, 255, 153)
+        font-family: "Jost", serif;
+        min-height: 100vh;
+        backg
 }
-nav ul {list-style-type: none;
+nav {
+        background: blue;
+        padding: 1 rem; 
+}
+nav ul {
+        list-style-type: none;
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: space-around;
 }
-nav ul li {display: inline;
+nav ul li {
+        display: inline;
 }
-nav ul li a {color: white;
-             text-decoration: none;
-             padding: 0.5 rem 1 rem;
-             display: block;
+nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5 rem 1 rem;
+        display: block;
 }
-nav ul li a:hover {background-color: #575757;
-                   border-radius: 5px;
+nav ul li a:hover {
+        background-color: #575757;
+        border-radius: 5px;
 }
