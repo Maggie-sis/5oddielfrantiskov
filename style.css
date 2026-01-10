@@ -13,7 +13,8 @@ nav ul {list-style-type: none;
 }
 nav ul li {display: inline;
 }
-nav ul li a {text-decoration: none;
+nav ul li a {color: white;
+             text-decoration: none;
              padding: 0.5 rem 1 rem;
              display: block;
 }
