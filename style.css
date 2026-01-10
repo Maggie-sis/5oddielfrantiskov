@@ -4,7 +4,7 @@
         box-sizing: border-box;
 }
 body {
-        background-image: url('https://static.vecteezy.com/system/resources/previews/041/466/920/non_2x/illustration-of-a-chinese-blue-dragon-tattoo-of-blue-asian-dragon-vector.jpg')
+        background-image: url('https://static.vecteezy.com/system/resources/previews/041/466/920/non_2x/illustration-of-a-chinese-blue-dragon-tattoo-of-blue-asian-dragon-vector.jpg') no-repeat center center/cover;
         background-color: rgba(204, 255, 153)
         font-family: "Jost", serif;
         min-height: 100vh;
