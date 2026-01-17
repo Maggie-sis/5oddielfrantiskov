@@ -4,9 +4,10 @@
         box-sizing: border-box;
 }
 body {  
-        background-color: rgba(204, 255, 153)
+        /* background-color: rgba(204, 255, 153) */
         font-family: "Jost", serif;
         min-height: 100vh;
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s) no-repeat center center/cover;
 }
 nav {
         background: blue;
