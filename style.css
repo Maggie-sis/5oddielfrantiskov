@@ -58,12 +58,12 @@ body {
         transition: all 0.7s ease;
         white-space: nowrap;
         /*display: block;*/
+.navbar-container .navbar-menu li a:hover {
+        color: #162530;
+        background-color: rgba(188, 212, 229, 0.8);
+        border: 2px solid #fff;
 }
 /*nav ul li {
         display: inline;
-}
-nav ul li a:hover {
-        background-color: #575757;
-        border-radius: 5px;
 }
 */
