@@ -32,8 +32,15 @@ body {
         max-width: 1600px;
         /*list-style-type: none;
         margin: 0;*/
-        
 }
+
+.navbaar-logo {
+        font-size: 2 rem;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+}    
 /*nav ul li {
         display: inline;
 }
