@@ -41,7 +41,12 @@ body {
         text-decoration: none;
         cursor: pointer;
 }    
-
+.navbar-container .navbar-menu {
+        display: flex;
+        text-align: center;
+        gap: 1.5rem;
+        list-style: none;
+}
 /*nav ul li {
         display: inline;
 }
