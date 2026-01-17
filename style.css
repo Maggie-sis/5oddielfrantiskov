@@ -9,9 +9,19 @@ body {
         min-height: 100vh;
         background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s) no-repeat center center/cover;
 }
-nav {
-        background: blue;
-        padding: 1 rem; 
+.navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        background: transparent;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        z-index: 999;
+        /* padding: 1 rem; */
 }
 nav ul {
         list-style-type: none;
