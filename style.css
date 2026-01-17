@@ -47,14 +47,20 @@ body {
         gap: 1.5rem;
         list-style: none;
 }
+.navbar-container .navbar-menu li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 500;
+        padding: 3px 20px;
+        border-radius: 20px;
+        border: 2px solid transparent;
+        transition: all 0.7s ease;
+        white-space: nowrap;
+        /*display: block;*/
+}
 /*nav ul li {
         display: inline;
-}
-nav ul li a {
-        color: white;
-        text-decoration: none;
-        padding: 0.5 rem 1 rem;
-        display: block;
 }
 nav ul li a:hover {
         background-color: #575757;
