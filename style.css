@@ -23,14 +23,18 @@ body {
         z-index: 999;
         /* padding: 1 rem; */
 }
-nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+.navbar-container {
         display: flex;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 2rem;
+        max-width: 1600px;
+        /*list-style-type: none;
+        margin: 0;*/
+        
 }
-nav ul li {
+/*nav ul li {
         display: inline;
 }
 nav ul li a {
@@ -43,3 +47,4 @@ nav ul li a:hover {
         background-color: #575757;
         border-radius: 5px;
 }
+*/
