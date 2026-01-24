@@ -97,6 +97,10 @@ body {
                 box-shadow: 0 10px 10px rgba(red, green, blue, alpha);
                 backdrop-filter: blur(10px);
         }
+        .navbar-toggle {
+                display: block;
+                z-index: 999;
+        }
 }
 /*nav ul li {
         display: inline;
