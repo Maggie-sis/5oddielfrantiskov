@@ -104,6 +104,8 @@ body {
                 display: block;
                 z-index: 999;
         }
+        .navbar-toggle.active .bar:nt-child(2) {
+        }
 }
 /*nav ul li {
         display: inline;
