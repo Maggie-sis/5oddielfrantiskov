@@ -105,6 +105,7 @@ body {
                 z-index: 999;
         }
         .navbar-toggle.active .bar:nt-child(2) {
+                opacity: 0;
         }
 }
 /*nav ul li {
