@@ -64,6 +64,12 @@ body {
         background-color: rgba(188, 212, 229, 0.8);
         border: 2px solid #fff;
 }
+.navbar-toggle {
+        background: transparent;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+}
 /*nav ul li {
         display: inline;
 }
