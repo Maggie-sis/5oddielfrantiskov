@@ -59,7 +59,8 @@ body {
         white-space: nowrap;
         /*display: block;*/
 }
-.navbar-container .navbar-menu li a:hover {
+.navbar-container .navbar-menu li a:hover, 
+.navbar-container .navbar-menu li a.active {
         color: #162530;
         background-color: rgba(188, 212, 229, 0.8);
         border: 2px solid #fff;
