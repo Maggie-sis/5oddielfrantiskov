@@ -104,10 +104,15 @@ body {
                 display: block;
                 z-index: 999;
         }
-        .navbar-toggle.active .bar:nt-child(2) {
+        .navbar-toggle.active .bar:nth-child(2) {
                 opacity: 0;
         }
-}
+        .navbar-toggle.active .bar:nth-child(1) {
+                transform: translate(8px) rotate(45deg);
+        }
+        .navbar-toggle.active .bar:nth-child(3) {
+                transform: translate(-8px) rotate(-45deg);
+        }
 /*nav ul li {
         display: inline;
 }
