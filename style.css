@@ -114,6 +114,18 @@ body {
         .navbar-toggle.active .bar:nth-child(3) {
                 transform: translate(-8px) rotate(-45deg);
         }
+@media (max-width: 482px) {
+        .navbar-container{
+                padding: 0 1rem;
+        }
+        navbar-logo{
+                font-size: 1.7 rem;
+        }
+        .navbar container .navbar-menu li a {
+                font-size: 1.2rem;
+                padding: 3px 15px;                 
+        }
+}
 /*nav ul li {
         display: inline;
 }
