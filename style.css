@@ -21,7 +21,7 @@ body {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(10px);
         z-index: 999;
-        /* padding: 1 rem; */
+        /* padding: 1rem; */
 }
 .navbar-container {
         display: flex;
@@ -35,7 +35,7 @@ body {
 }
 
 .navbar-logo {
-        font-size: 2 rem;
+        font-size: 2rem;
         font-weight: 600;
         color: #fff;
         text-decoration: none;
@@ -96,7 +96,7 @@ body {
                 top: 0;
                 right: 0;
                 padding: 5rem 1.5rem;
-                box-shadow: 0 10px 10px rgba(red, green, blue, alpha);
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
                 backdrop-filter: blur(10px);
         }
         .navbar-container .navbar-menu.active {
@@ -121,7 +121,7 @@ body {
                 padding: 0 1rem;
         }
         .navbar-logo{
-                font-size: 1.7 rem;
+                font-size: 1.7rem;
         }
         .navbar-container .navbar-menu li a {
                 font-size: 1.2rem;
