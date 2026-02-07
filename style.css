@@ -78,7 +78,7 @@ body {
         height: 3px;
         margin: 5px auto;
         background: #fff;
-        transition: all 0.3 ease-in-out;
+        transition: all 0.3s ease-in-out;
 }
 /* responsive style */
 @media (max-width: 880px) {
