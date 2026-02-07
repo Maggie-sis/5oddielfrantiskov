@@ -120,7 +120,7 @@ body {
         .navbar-container{
                 padding: 0 1rem;
         }
-        navbar-logo{
+        .navbar-logo{
                 font-size: 1.7 rem;
         }
         .navbar container .navbar-menu li a {
@@ -134,6 +134,7 @@ body {
         .navbar-toggle {
                 display: block;
                 z-index: 999;
+        }
 }
 /*nav ul li {
         display: inline;
