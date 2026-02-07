@@ -23,7 +23,7 @@ body {
         z-index: 999;
         /* padding: 1 rem; */
 }
-.navbar- {
+.navbar-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -41,7 +41,7 @@ body {
         text-decoration: none;
         cursor: pointer;
 }    
-.navbar- .navbar-menu {
+.navbar-container .navbar-menu {
         display: flex;
         text-align: center;
         gap: 1.5rem;
