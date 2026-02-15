@@ -110,10 +110,10 @@ body {
                 opacity: 0;
         }
         .navbar-toggle.active .bar:nth-child(1) {
-                transform: translate(8px) rotate(45deg);
+                transform: translate(8px) rotate(-45deg);
         }
         .navbar-toggle.active .bar:nth-child(3) {
-                transform: translate(-8px) rotate(-45deg);
+                transform: translate(-8px) rotate(45deg);
         }
 }
 @media (max-width: 482px) {
