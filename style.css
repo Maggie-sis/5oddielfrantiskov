@@ -113,7 +113,7 @@ body {
                 transform: translateY(8px) rotate(45deg);
         }
         .navbar-toggle.active .bar:nth-child(3) {
-                transform: translateY(8px) rotate(-45deg);
+                transform: translateY(-8px) rotate(-45deg);
         }
 }
 @media (max-width: 482px) {
