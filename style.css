@@ -136,6 +136,21 @@ body {
                 z-index: 999;
         }
 }
+/*Galleryyyyy*/
+.image-container {
+        height: 360px;
+        max-width: 500px;
+        width: 100%;
+}
+.image-container .carousel {
+        height: 100%;
+        width: 100%;
+}
+.carousel img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+}
 /*nav ul li {
         display: inline;
 }
