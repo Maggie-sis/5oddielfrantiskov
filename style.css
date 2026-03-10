@@ -154,21 +154,47 @@ body {
         background: #fff;
         align-items: center;
         justify-content: center;
+        position: relative;
+}
 
+.wrapper i.button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 36px;
+        width: 36px;
+        background-color: #343f4f;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 36px;
+        color: #fff;
+        font-size: 15px;
+}
+
+i#prev {
+        left: 25px;
+}
+i#next {
+        right: 25px;
 }
 .image-container {
         height: 320px;
         max-width: 500px;
         width: 100%;
 }
+
 .image-container .carousel {
+        display: flex;
         height: 100%;
         width: 100%;
 }
+
 .carousel img {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        border-radius: 18px;
+        border: 10px solid #fff;
 }
 /*nav ul li {
         display: inline;
