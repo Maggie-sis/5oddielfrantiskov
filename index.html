@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5oddielfrantiskov</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -33,18 +33,27 @@
         <p>Hi world! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.</p>
     </section>
-    <section class="gallery-section">
-        <section class="wrapper">
-            <i class="fa-solid fa-arrow-left" id="prev"></i>
-            <div class="image-container">
-                <div class="carousel">
-                    <img src="https://github.com/Maggie-sis/5oddielfrantiskov/blob/main/Photos/side-view-smiley-scouts-outdoors.jpg?raw=true" alt="">
-                    <img src="Photos/side-view-smiley-scouts-outdoors.jpg" alt="">
-                </div>
-                <i class="fa-solid fa-arrow-right" id="next"></i>
+    <div class="background"> <!-- The background div wraps everything and gives us a base to apply a gradient.-->
+        <div class="slider-container"> <!-- The slider-container holds the entire slider, including the images and navigation buttons.-->
+            <div class="slider">
+                <!--<i class="fa-solid fa-arrow-left" id="prev"></i>//
+                <div class="slide">-->
+                <!---Slides: Each image is wrapped in a slide div. We use the Unsplash service for random images.-->
+                <div class="slide"><img src="Photos/side-view-smiley-scouts-outdoors.jpg" alt=""></div>
+                <div class="slide"><img src="https://github.com/Maggie-sis/5oddielfrantiskov/blob/main/Photos/side-view-smiley-scouts-outdoors.jpg?raw=true" alt=""></div>
+                                   
+                    
+                <!--<i class="fa-solid fa-arrow-right" id="next"></i>-->
             </div>
-        </section>
-    </section>
+            <button class="prev"&#10094;</button>
+            <button class="next"&#10095;</button>
+        </div>
+        <div class="dots-container">
+            <span class="dot" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+        </div>
+    </div>
+   
     <footer>
         //<p>Image by 
                     <img src="<a href="https://www.freepik.com/free-photo/side-view-smiley-scouts-outdoors_33807979.htm#fromView=keyword&page=1&position=4&uuid=969fdd53-ad6a-4f71-9e57-3421bcc3a6d6&query=Scout">Image by freepik</a> alt=""></p>//
