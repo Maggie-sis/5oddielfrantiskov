@@ -7,7 +7,7 @@ body {
         background-color: rgba(204, 255, 153);
         font-family: "Jost", serif;
         min-height: 100vh;
-        /*background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s) no-repeat center center/cover;*/
+        background: radial-gradient(circle, rgba(43, 255, 72, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 .navbar {
         display: flex;
@@ -135,6 +135,13 @@ body {
                 display: block;
                 z-index: 999;
         }
+}
+
+.background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 80px);
 }
 /* Gallery Section 
 .gallery-section {
