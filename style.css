@@ -176,4 +176,54 @@ body {
         object-fit: cover; /*Images are scaled to cover the entire slide, cropping if necessary*/
         border-radius: 10px;
 }
-
+/*Common styling for both previous and next navigation buttons*/
+.prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        width: clamp(30px, 5vw, 40px);
+        height: clamp(30px, 5vw, 40px);
+        cursor: pointer;
+        z-index: 10;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;        
+}
+.prev {
+        left: 10px;
+}
+.next {
+        right: 10px;
+}
+.prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8); 
+}
+.dots-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.dot {
+     width: clamp(10px, 2vw, 15px);
+     height: clamp(10px, 2vw, 15px);
+     margin: 0 5px; /*Spacing between dots*/
+     background-color: rgba(255, 255, 255, 0.5); /*semi-transparent white background*/
+     border-radius: 50%; /*Makes the dots circular*/
+     cursor: pointer;
+     transition: background-color 0.3s ease; /*Smooth transition for background color on hover*/
+}
+.dot.active {
+        background-color: rgba(255, 255, 255, 1); /* Solid white background for the active dot */
+}
+/*Make buttons easier to tap on mobile
+@media (max-width: 600px) {
+        .prev { left: 5px; }
+        .next { right: 5px; }
+}*/
