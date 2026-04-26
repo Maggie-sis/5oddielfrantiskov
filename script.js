@@ -17,10 +17,10 @@ links.forEach(link => {
 });
 
 const slider = document.querySelector(".slider");
-const slides = document.querySelector(".slide");
+const slides = document.querySelectorAll(".slide");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
-const dots = document.querySelector(".dot");
+const dots = document.querySelectorAll(".dot");
 const sliderContainer = document.querySelector(".slider-container");
 
 let currentIndex = 0; // Tracks the current slide index
@@ -41,11 +41,11 @@ function showSlides(index) {
   if (index >= slides.length) {
     currentIndex = 0; // Reset to first slide if at the end
   } else if (index < 0) {
-    currentIndex = slides.length - 1 // Go to last slide if at the beginning
+    currentIndex = slides.length - 1; // Go to last slide if at the beginning
   } else {
     currentIndex = index; // Otherwise, set to the provided index
   }
-  slider.style.transform = `translateX($-{currentIndex * 100}%)`; // Slide transition
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`; // Slide transition
   updateDots(); // Update the dots to reflect the current slide
 }
 // Function to move to the next slide
