@@ -54,11 +54,34 @@ function nextSlide() {
 }
 // Function to move to the previous slide
 function prevSlide() {
-  showSlides{currentIndex - 1};
+  showSlides(currentIndex - 1);
 }
 // Start the automatic sliding of images
 function startAutoSlide() {
   autoSlideInterval = setInterval(nextSlide, 4000); //Slide every 4 seconds
 }
 // Stop the automatic sliding
+function stopAutoSlide() {
+  clearInterval(autoSlideInterval); // Clear the interval to stop auto-sliding
+}
+// Add event listeners to dots for direct navigation
+dots.forEach(dot => {
+  dot.addEventListener("click", () => {
+    stopAutoSlide(); // Stop auto-slide when manually selecting a slide
+    showSlides(parseInt(dot.dataset.index)) // Show the selected slide 
+    startAutoSlide(); // Restart auto-slide
+  });
+});
+// Add event listeners to navigation buttons
+nextBtn.addEventListener("click", nextSlide);
+prevBtn.addEventListener("click", prevSlide);
 
+// Stop auto-slide when the mouse enters the slider container
+sliderContainer.addEventListener("mouseover", stopAutoSlide);
+
+// Restart auto-slide when the mouse leaves the slider container
+sliderContainer.addEventListener("mouseout", startAutoSlide);
+
+// Start auto-sliding when the page loads
+startAutoSlide();
+updateDots(); // Initialize the dots
