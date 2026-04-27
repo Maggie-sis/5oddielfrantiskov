@@ -209,6 +209,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
 }
 .dot {
      width: clamp(10px, 2vw, 15px);
