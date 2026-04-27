@@ -5,7 +5,7 @@
 } 
 body {  
         background-color: rgba(204, 255, 153);
-        font-family: "Jost", serif;
+        font-family: "Poppins", sans-serif;
         min-height: 100vh;
         background: radial-gradient(circle, rgba(43, 255, 72, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
@@ -225,3 +225,21 @@ body {
         .prev { left: 5px; }
         .next { right: 5px; }
 }*/
+
+.map-container {
+        height: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+
+.map-container h1 {
+        margin-bottom: 60px;
+}
+iframe {
+        width: 80%; 
+        height: 500px;
+        filter: invert(100%);
+}
