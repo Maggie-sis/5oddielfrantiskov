@@ -139,6 +139,7 @@ body {
 
 .background {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: calc(100vh - 80px);
@@ -208,8 +209,7 @@ body {
         margin-top: 20px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        width: 100%;
+        align-items: center;       
 }
 .dot {
      width: clamp(10px, 2vw, 15px);
