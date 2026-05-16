@@ -1,8 +1,29 @@
+html {
+        scroll-behavior: smooth;
+}
 * {
         margin: 0;
         padding: 0;
         box-sizing: border-box; 
 } 
+section {
+        max-width: 800px; /* stops it from going edge to edge */
+        margin: 4rem auto; /* centers it + adds space above/below */
+        padding: 2rem; /* inner breathing room */
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: (10px);
+        color: #fff;
+
+}
+section h1 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+}
+section p {
+        line-height: 1.7; /* makes text easier to read */
+        margin-bottom: 0.75rem;
+}
 body {  
         background-color: rgba(204, 255, 153);
         font-family: "Poppins", sans-serif;
