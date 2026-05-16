@@ -85,3 +85,30 @@ sliderContainer.addEventListener("mouseout", startAutoSlide);
 // Start auto-sliding when the page loads
 startAutoSlide();
 updateDots(); // Initialize the dots
+
+//Touch/Swipe Support
+// Store where the finger first touched the screen
+let touchStartX = 0;
+
+// When finger touches screen, record the X position
+sliderContainer.addEventListener("touchstart", (e) => {
+  touchStartX = e.touches[0].clientX;
+});
+// When finger lifts, calculate how far it moved
+sliderContainer.addEventListener(touchend, (e)=> {
+  const touchEndX = e.changedTouches[0].clientX; 
+  const diff = touchStart - touchEndX;
+
+  if (diff > 50) {
+     // Swiped LEFT → go to next slide (50px threshold avoids accidental triggers)
+     stopAutoSlide();
+     nextSlide();
+     startAutoSlide();
+  } else if (diff < - 50) {
+    // Swiped RIGHT → go to previous slide
+    stopAutoSlide();
+    prevSlide();
+    startAutoSlide();
+  }
+   // If diff is between -50 and 50, it was just a tap - do nothing
+});
