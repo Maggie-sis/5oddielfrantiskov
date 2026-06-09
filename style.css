@@ -12,7 +12,7 @@ section {
         padding: 2rem; /* inner breathing room */
         background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
-        border-radius: (10px);
+        border-radius: 10px;
         color: #fff;
 
 }
@@ -185,7 +185,8 @@ footer h3 {
 
 .background {
         width: 100%;    
-        height: calc(100vh - 80px);
+        min-height: calc(100vh - 80px);
+        height: auto;
         position: relative;
         display: flex;
         flex-direction: column;

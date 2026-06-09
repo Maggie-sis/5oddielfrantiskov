@@ -73,8 +73,12 @@ dots.forEach(dot => {
   });
 });
 // Add event listeners to navigation buttons
-nextBtn.addEventListener("click", nextSlide);
-prevBtn.addEventListener("click", prevSlide);
+nextBtn.addEventListener("click", () => { 
+  stopAutoSlide(); // 1. Kill the current timer completely
+  nextSlide();  // 2. Move to next slide
+  startAutoSlide(); // 3. Start a FRESH 4-second timer from zero
+});
+prevBtn.addEventListener("click", () => { stopAutoSlide(); prevSlide(); startAutoSlide(); });
 
 // Stop auto-slide when the mouse enters the slider container
 sliderContainer.addEventListener("mouseover", stopAutoSlide);
@@ -95,9 +99,9 @@ sliderContainer.addEventListener("touchstart", (e) => {
   touchStartX = e.touches[0].clientX;
 });
 // When finger lifts, calculate how far it moved
-sliderContainer.addEventListener(touchend, (e)=> {
+sliderContainer.addEventListener("touchend", (e)=> {
   const touchEndX = e.changedTouches[0].clientX; 
-  const diff = touchStart - touchEndX;
+  const diff = touchStartX - touchEndX;
 
   if (diff > 50) {
      // Swiped LEFT → go to next slide (50px threshold avoids accidental triggers)
