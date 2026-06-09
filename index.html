@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5. oddiel Františkov</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-logo">5. oddiel Františkov</a>
-            <button class="navbar-toggle">
+            <button class="navbar-toggle" aria-label="Toggle navigation menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -36,15 +37,35 @@
     <div class="background"> <!-- The background div wraps everything and gives us a base to apply a gradient.-->
         <div class="slider-container"> <!-- The slider-container holds the entire slider, including the images and navigation buttons.-->
             <div class="slider">
-                <div class="slide"><img src="Photos/side-view-smiley-scouts-outdoors.jpg" alt=""></div>
-                <div class="slide"><img src="Photos/kids-having-fun-as-boy-scouts.jpg" alt=""></div>
-                <div class="slide"><img src="Photos/b1.jpg" alt=""></div>
-                <div class="slide"><img src="Photos/b2.jpg" alt=""></div>
-                <div class="slide"><img src="Photos/b3.jpg" alt=""></div>
+                <div class="slide">
+                    <img src="Photos/side-view-smiley-scouts-outdoors.jpg" 
+                         alt="side-view-smiley-scouts-outdoors"
+                         loading="eager">
+                </div>
+                <div class="slide">
+                    <img src="Photos/kids-having-fun-as-boy-scouts.jpg" 
+                         alt="kids-having-fun-as-boy-scouts.jpg"
+                         loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Photos/b1.jpg" 
+                         alt="random image"
+                         loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Photos/b2.jpg" 
+                         alt="random image"
+                         loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Photos/b3.jpg" 
+                         alt="random image"
+                         loading="lazy">
+                </div>
             </div>
          
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
+            <button class="prev" aria-label="Previous slide">&#10094;</button>
+            <button class="next" aria-label="Next slide">&#10095;</button>
         </div>
         
         <div class="dots-container">

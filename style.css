@@ -162,7 +162,7 @@ footer h3 {
                 transform: translateY(-8px) rotate(-45deg);
         }
 }
-@media (max-width: 482px) {
+@media (max-width: 480px) {
         .navbar-container{
                 padding: 0 1rem;
         }
@@ -297,6 +297,9 @@ iframe {
         }
 
         .map-container h1 {
-                font-size: 1.5 rem;
+                font-size: 1.5rem;
+        }
+        .slider-container {
+                width: 90%;
         }
 } 
