@@ -147,4 +147,34 @@ body {
         align-items: center;          
 }
 
+/* ── News Feed ─────────────────────────────────── */
+.news-feed {
+        max-width: 680px;
+        margin 40px auto 80px;
+        padding: 0 20px;
+}
+ article-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 28px 0;
+        border-bottom: 1px solid #e6e6e6;
+        text-decoration: none;
+        color: inherit;
+ }
+
+ .article-card:first-child { padding-top: 0; }
+ .article-card:last-child { border-bottom: none; }
+
+ .card-body { flex: 1; min-width: 0; }
+
+ .card-meta {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 8px;
+        font-size: 13px;
+        color: #6b6b6b
+ }
 
