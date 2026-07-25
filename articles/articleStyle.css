@@ -173,3 +173,15 @@ footer h3 {
         font-size: 0.95rem;
         font-weight: 400;
 }
+
+terminology-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 24px 0;
+        font-size:0.95rem;
+}
+
+.terminology-table th {
+        text-align:left;
+        padding: 10px
+}
