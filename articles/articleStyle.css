@@ -175,8 +175,14 @@ footer h3 {
 }
 
 * ── Terminology table ─────────────────────────────────── */
+.table-scroll {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+}
 terminology-table {
         width: 100%;
+        min-width: 600px;
         border-collapse: collapse;
         margin: 24px 0;
         font-size:0.95rem;
